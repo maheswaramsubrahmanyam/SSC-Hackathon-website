@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>SSC Hackathon 1.0 2024</title>
+    <link rel="icon" href="https://res.cloudinary.com/dk6egvuyy/image/upload/v1712752778/SSClogo-removebg-preview_3_nrcgl5.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            margin: 0;
+
+            background-color: black;
+            color: white;
+            margin: 0;
+
+        }
+
+        canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+
+        .heading {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: 900;
+            font-size: 3.5em;
+            margin-top: 15px;
+            color: rgb(128, 128, 190);
+            text-align: center;
+            padding-top: 10px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: rgba(12, 12, 12, 0.9);
+            box-shadow: 0 0 10px rgba(194, 192, 192, 0.1);
+        }
+
+        .header,
+        .section,
+        .contact {
+            margin-bottom: 20px;
+        }
+
+        .header h1,
+        .section h2,
+        .contact h2 {
+            color: #f8f5f5;
+        }
+
+        .section p,
+        .section ul,
+        .contact p {
+            color: #ffff;
+        }
+
+        .contact p {
+            margin: 5px 0;
+        }
+
+        .problem {
+            font-weight: bold;
+            color: white;
+        }
+
+        strong {
+            color: hsl(143, 58%, 43%);
+            font-size: 25px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: 900;
+        }
+
+        .cs-padding {
+            margin: 10px;
+        }
+
+        .main-page-background {
+            min-height: 100vh;
+        }
+
+        .Hacklathon-image {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .logo-img {
+            width: 90px;
+        }
+
+        .footer {
+            margin-left: 10px;
+            background-color: transparent;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .footer a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            color: #ddd;
+        }
+
+        .footer i {
+            font-size: 24px;
+        }
+
+        @media (max-width: 576px) {
+            .heading {
+                font-size: 2em;
+            }
+
+            .logo-img {
+                width: 70px;
+            }
+
+            .footer i {
+                font-size: 18px;
+            }
+        }
+
+        .price-money {
+            font-size: 42px;
+            font-weight: 1000;
+            color: #fff;
+            font-family: Georgia, Times, 'Times New Roman', serif;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas></canvas>
+    <div class="main-page-background">
+
+        <div class="container-fluid m-2" id="MainPage">
+            <div class="row">
+                <div class="col-2">
+                    <a href="https://whatsapp.com/channel/0029VaYTpyWJpe8oGde6sz3K"> <img src="https://res.cloudinary.com/dk6egvuyy/image/upload/v1712752778/SSClogo-removebg-preview_3_nrcgl5.png" class="logo-img" /> </a>
+                </div>
+                <div class="col-8 text-center-auto">
+                    <h1 class="heading">SSC HACKATHON 1.0 2024</h1>
+                </div>
+                <div class="col-2">
+                    <a href="https://studentunionfornation.org/"><img src="https://res.cloudinary.com/dk6egvuyy/image/upload/v1721034925/SUN_logo_uhzr9o.jpg" class="logo-img" /></a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="header">
+                        <h1>Student Service Community Hackathon 1.0 2024</h1>
+                        <p><strong>Event Name:</strong> Hackathon 1.0 2024</p>
+                        <p><strong>Organized By:</strong> The SSC <a href=" https://whatsapp.com/channel/0029VaYTpyWJpe8oGde6sz3K">(Student Service Community)</a></a></p>
+                        <p><strong>Sponsored By:</strong> The SUN <a href="https://studentunionfornation.org/"> (Student Union Nation)</a></p>
+                        <p><strong>Date:</strong> Thursday, 15th August 2024</p>
+                        <p><strong>Time:</strong> 2:00 PM to 8:00 PM (6-hour Hackathon)</p>
+                        <p class="price-money"><strong>Price Money:</strong> 10,000/-</p>
+                        <p><strong>Participation Certificate:</strong> Microsoft Certification </p>
+                        <p><strong>Mode:</strong> Online</p>
+                        <p><strong>Regestration Fee:</strong> Free $0 /-</p>
+                        <a href="https://forms.gle/5Hgn88HbEMQjsnGJA"><button class="btn btn-primary"> Register Now</button></a>
+                        <a href="https://chat.whatsapp.com/FYpKGldvZKm4YWC0YXSP76"><button class="btn btn-success"> Hackathon Whatsapp Group </button></a>
+                    </div>
+
+                    <div class="section">
+                        <details>
+                            <summary>
+                                <h2>Event Structure</h2>
+                            </summary>
+                            <ul>
+                                <li><strong>Introduction and Kickoff (2:00 PM - 2:30 PM):</strong> Briefing on the rules, objectives, and project expectations.</li>
+                                <li><strong>Hackathon (2:30 PM - 7:30 PM):</strong> Participants work on their projects. Mentors will be available for guidance.</li>
+                                <li><strong>Submission (7:30 PM - 8:00 PM):</strong> Final submission of projects.</li>
+                            </ul>
+                        </details>
+                    </div>
+                    <div class="section">
+                        <details>
+                            <summary>
+                                <h2>How to Participate</h2>
+                            </summary>
+                            <ul>
+                                <li><strong>Registration:</strong> Participants must register online through the provided <a href="https://docs.google.com/forms/d/e/1FAIpQLScN8tnakMlTMkf7af4lfANSce5kCqJXLnyipnbTJ33143Bxjg/viewform">link</a>.</li>
+                                <li><strong>Team Formation:</strong> Teams can consist of 2-4 members from the same or different branches.</li>
+                                <li><strong>Submission Format:</strong> Projects must be submitted in the prescribed format, including source code, documentation, and a presentation.</li>
+                                <a href="https://forms.gle/5Hgn88HbEMQjsnGJA">
+                                    <li><button class="btn btn-success">Register Now</button></li>
+                                </a>
+                            </ul>
+                        </details>
+                    </div>
+                    <div class="contact">
+                        <details>
+                            <summary>
+                                <h2>Contact Information</h2>
+                            </summary>
+                            <p><strong>Event Organizer:</strong>Maheswaram Subrahmanyam (7569399294)</p>
+                            <p><strong>Support Email:</strong> studentservicecommunity@gmail.com, msdevgoog01@gmail.com</p>
+                        </details>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid" id="PageTwo">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="heading text-center">
+                        CSE HACKATHON <br> PROBLEM STATEMENTS
+                    </h1>
+                    <h1>Computer Science Engineering (CSE)</h1>
+                </div>
+
+                <div class="col-12">
+                    <ul class="cs-padding m-sm-2 m-lg-4">
+                        <li class="problem"><strong>Decentralized Identity Verification System:</strong> Develop a blockchain-based identity verification system to ensure secure and tamper-proof identity management.</li>
+                        <li class="problem"><strong>Real-time Cyber Threat Detection:</strong> Create an AI-powered system that monitors network traffic in real-time to detect and mitigate cyber threats.</li>
+                        <li class="problem"><strong>Automated Code Review Tool:</strong> Build a machine learning-based tool that automatically reviews code for potential bugs, vulnerabilities, and style inconsistencies.</li>
+                        <li class="problem"><strong>Smart Traffic Management System:</strong> Design a real-time traffic management system using IoT and AI to optimize traffic flow and reduce congestion.</li>
+                        <li class="problem"><strong>Distributed Cloud Storage System:</strong> Develop a decentralized cloud storage system that ensures data redundancy, security, and accessibility.</li>
+                        <li class="problem"><strong>AI-Driven Customer Support Chatbot:</strong> Create an AI chatbot capable of understanding and resolving customer queries in real-time across various platforms.</li>
+                        <li class="problem"><strong>Predictive Maintenance for Industrial Equipment:</strong> Design a predictive maintenance system using IoT sensors and machine learning to predict equipment failures before they occur.</li>
+                        <li class="problem"><strong>Personalized Learning Platform:</strong> Develop an adaptive learning platform that customizes educational content based on the learner's pace and performance.</li>
+                        <li class="problem"><strong>Virtual Reality Collaboration Tool:</strong> Build a VR-based tool that allows remote teams to collaborate in a virtual environment for enhanced productivity.</li>
+                        <li class="problem"><strong>Blockchain-Based Voting System:</strong> Create a secure and transparent voting system using blockchain technology to ensure the integrity of the voting process.</li>
+                    </ul>
+                </div>
+
+                <div class="container-fluid" id="PageSeven">
+                    <div class="row">
+                        <div class="col-12">
+                            <h1 class="heading text-center">
+                                ECE HACKATHON <br> PROBLEM STATEMENTS
+                            </h1>
+                            <h1 class="h1">Electronics and Communication Engineering (ECE)</h1>
+                        </div>
+                        <div class="col-12">
+                            <ul class="cs-padding m-4">
+                                <li class="problem"><strong>Smart Grid Management System:</strong> Develop an intelligent system for managing and optimizing the performance of electrical grids using IoT and AI.</li>
+                                <li class="problem"><strong>5G-Enabled Remote Surgery System:</strong> Create a 5G-based telemedicine platform that supports remote surgical procedures with real-time feedback and low latency.</li>
+                                <li class="problem"><strong>Autonomous Drone Navigation:</strong> Design an AI-powered autonomous drone navigation system for applications in delivery, surveillance, and disaster management.</li>
+                                <li class="problem"><strong>Energy Harvesting IoT Devices:</strong> Develop IoT devices that harvest energy from their environment (e.g., solar, thermal, RF) for sustainable operation.</li>
+                                <li class="problem"><strong>Advanced Signal Processing for Communication Systems:</strong> Build a signal processing system that enhances the reliability and efficiency of communication systems.</li>
+                                <li class="problem"><strong>Wearable Health Monitoring Devices:</strong> Create wearable devices that continuously monitor health metrics and provide real-time analysis and alerts.</li>
+                                <li class="problem"><strong>Real-time Spectrum Management:</strong> Design a system that dynamically allocates spectrum resources to optimize the performance of wireless networks.</li>
+                                <li class="problem"><strong>AI-Based Fault Detection in Circuits:</strong> Develop an AI system that detects and diagnoses faults in electronic circuits in real-time.</li>
+                                <li class="problem"><strong>Smart Home Automation with Edge Computing:</strong> Create a smart home automation system that leverages edge computing for real-time decision-making.</li>
+                                <li class="problem"><strong>RFID-Based Asset Tracking System:</strong> Design an RFID-based system for real-time tracking and management of assets in various industries.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="container-fluid" id="PageFour">
+                    <div class="row">
+                        <div class="col-12">
+                            <h1 class="heading text-center">
+                                IT HACKATHON <br> PROBLEM STATEMENTS
+                            </h1>
+                            <h1 class="h1">Information Technology (IT)</h1>
+                        </div>
+                        <div class="col-12">
+                            <ul class="cs-padding m-sm-2 m-lg-4">
+                                <li class="problem"><strong>Decentralized Identity Verification System:</strong> Develop a blockchain-based identity verification system to ensure secure and tamper-proof identity management.</li>
+                                <li class="problem"><strong>Real-time Cyber Threat Detection:</strong> Create an AI-powered system that monitors network traffic in real-time to detect and mitigate cyber threats.</li>
+                                <li class="problem"><strong>Automated Code Review Tool:</strong> Build a machine learning-based tool that automatically reviews code for potential bugs, vulnerabilities, and style inconsistencies.</li>
+                                <li class="problem"><strong>Smart Traffic Management System:</strong> Design a real-time traffic management system using IoT and AI to optimize traffic flow and reduce congestion.</li>
+                                <li class="problem"><strong>Distributed Cloud Storage System:</strong> Develop a decentralized cloud storage system that ensures data redundancy, security, and accessibility.</li>
+                                <li class="problem"><strong>AI-Driven Customer Support Chatbot:</strong> Create an AI chatbot capable of understanding and resolving customer queries in real-time across various platforms.</li>
+                                <li class="problem"><strong>Predictive Maintenance for Industrial Equipment:</strong> Design a predictive maintenance system using IoT sensors and machine learning to predict equipment failures before they occur.</li>
+                                <li class="problem"><strong>Personalized Learning Platform:</strong> Develop an adaptive learning platform that customizes educational content based on the learner's pace and performance.</li>
+                                <li class="problem"><strong>Virtual Reality Collaboration Tool:</strong> Build a VR-based tool that allows remote teams to collaborate in a virtual environment for enhanced productivity.</li>
+                                <li class="problem"><strong>Blockchain-Based Voting System:</strong> Create a secure and transparent voting system using blockchain technology to ensure the integrity of the voting process.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-fluid" id="PageFive">
+                    <div class="row">
+                        <div class="col-12">
+                            <h1 class="heading text-center">
+                                AIDS HACKATHON <br> PROBLEM STATEMENTS
+                            </h1>
+                            <h1 class="h1">Artificial Intelligence and Data Science (AIDS)</h1>
+                        </div>
+                        <div class="col-12">
+                            <ul class="cs-padding m-sm-2 m-lg-4">
+                                <li class="problem"><strong>AI for Predictive Healthcare:</strong> Develop an AI system that predicts diseases and recommends preventive measures based on patient data.</li>
+                                <li class="problem"><strong>Natural Language Understanding:</strong> Create a system that comprehends and generates human-like text for applications in customer service and content creation.</li>
+                                <li class="problem"><strong>Real-Time Facial Recognition:</strong> Build a real-time facial recognition system for security and surveillance purposes.</li>
+                                <li class="problem"><strong>Autonomous Vehicles:</strong> Design an AI system that enables autonomous vehicles to navigate complex environments safely.</li>
+                                <li class="problem"><strong>Predictive Analytics for Supply Chain Management:</strong> Develop a predictive analytics system that optimizes supply chain operations and reduces inefficiencies.</li>
+                                <li class="problem"><strong>AI-Powered Financial Advisor:</strong> Create an AI financial advisor that provides personalized investment advice based on user data and market trends.</li>
+                                <li class="problem"><strong>Smart Agriculture with AI:</strong> Build an AI system that analyzes agricultural data to optimize crop yield and reduce resource usage.</li>
+                                <li class="problem"><strong>AI-Driven Personal Assistant:</strong> Develop an AI personal assistant that learns and adapts to user preferences and behaviors.</li>
+                                <li class="problem"><strong>Real-Time Object Detection:</strong> Create a real-time object detection system for applications in security, retail, and manufacturing.</li>
+                                <li class="problem"><strong>AI for Climate Change Mitigation:</strong> Develop AI models that predict climate change impacts and recommend mitigation strategies.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-fluid" id="PageSix">
+                    <div class="row">
+                        <div class="col-12">
+                            <h1 class="heading text-center">
+                                AIML HACKATHON <br> PROBLEM STATEMENTS
+                            </h1>
+                            <h1 class="h1">Artificial Intelligence & Machine Learning (AIML)</h1>
+                        </div>
+                        <div class="col-12">
+                            <ul class="cs-padding m-sm-2 m-lg-4">
+                                <li class="problem"><strong>Generative Adversarial Networks (GANs) for Image Synthesis:</strong> Develop GANs to generate realistic images for applications in entertainment, design, and virtual reality.</li>
+                                <li class="problem"><strong>Reinforcement Learning for Robotics:</strong> Build a reinforcement learning system that enables robots to learn and perform complex tasks autonomously.</li>
+                                <li class="problem"><strong>AI for Drug Discovery:</strong> Create AI models that predict the effectiveness of new drug compounds for faster and cost-effective drug discovery.</li>
+                                <li class="problem"><strong>Explainable AI (XAI):</strong> Develop methods to make AI models more interpretable and transparent for critical decision-making processes.</li>
+                                <li class="problem"><strong>AI-Powered Autonomous Navigation:</strong> Design an AI system that enables autonomous navigation for drones, vehicles, and robots.</li>
+                                <li class="problem"><strong>Machine Learning for Predictive Maintenance:</strong> Build machine learning models that predict equipment failures and recommend maintenance schedules.</li>
+                                <li class="problem"><strong>AI in Natural Disaster Prediction:</strong> Develop AI models that predict natural disasters such as earthquakes, floods, and hurricanes.</li>
+                                <li class="problem"><strong>Personalized Learning with AI:</strong> Create AI-driven personalized learning platforms that adapt to individual learning styles and progress.</li>
+                                <li class="problem"><strong>AI for Financial Market Prediction:</strong> Build AI models that analyze market data to predict stock prices and financial trends.</li>
+                                <li class="problem"><strong>Federated Learning for Privacy-Preserving AI:</strong> Develop federated learning systems that allow the training of AI models without compromising data privacy.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+
+        <div class="footer ">
+            <p>Follow us on:</p>
+
+            <a href="https://www.linkedin.com/in/student-service-community-ssc-7a70a52aa/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://chat.whatsapp.com/H3AgvLp9axaEb2WUBbI6a1" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.youtube.com/@STUDENTSERVICECOMMUNITY" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.instagram.com/studentservicecommunity/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <p>&copy; 2024 Student Service Community. All rights reserved.</p>
+            <p><a href="https://www.linkedin.com/in/maheswaram-subrahmanyam-361238275/">&copy; Developed by Maheswaram Subrahmanyam.</a></p>
+        </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-pzjw8f+ua7Kw1TIq5qRmkF4vkQ8vxA17eOxYVwGr9/0AG1lzB0ufl8/4IlN2xFcd" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfS0d02aH5j6VjpApRYuC1wHjIBiTVzwdlG7t2e5x" crossorigin="anonymous"></script>
+
+    <script>
+        const STAR_COLOR = '#fff';
+        const STAR_SIZE = 3;
+        const STAR_MIN_SCALE = 0.2;
+        const OVERFLOW_THRESHOLD = 50;
+        const STAR_COUNT = (window.innerWidth + window.innerHeight) / 8;
+
+        const canvas = document.querySelector('canvas'),
+            context = canvas.getContext('2d');
+
+        let scale = 1, // device pixel ratio
+            width,
+            height;
+
+        let stars = [];
+
+        let pointerX,
+            pointerY;
+
+        let velocity = {
+            x: 0,
+            y: 0,
+            tx: 0,
+            ty: 0,
+            z: 0.0005
+        };
+
+        let touchInput = false;
+
+        generate();
+        resize();
+        step();
+
+        window.onresize = resize;
+        canvas.onmousemove = onMouseMove;
+        canvas.ontouchmove = onTouchMove;
+        canvas.ontouchend = onMouseLeave;
+        document.onmouseleave = onMouseLeave;
+
+        function generate() {
+
+            for (let i = 0; i < STAR_COUNT; i++) {
+                stars.push({
+                    x: 0,
+                    y: 0,
+                    z: STAR_MIN_SCALE + Math.random() * (1 - STAR_MIN_SCALE)
+                });
+            }
+
+        }
+
+        function placeStar(star) {
+
+            star.x = Math.random() * width;
+            star.y = Math.random() * height;
+
+        }
+
+        function recycleStar(star) {
+
+            let direction = 'z';
+
+            let vx = Math.abs(velocity.x),
+                vy = Math.abs(velocity.y);
+
+            if (vx > 1 || vy > 1) {
+                let axis;
+
+                if (vx > vy) {
+                    axis = Math.random() < vx / (vx + vy) ? 'h' : 'v';
+                } else {
+                    axis = Math.random() < vy / (vx + vy) ? 'v' : 'h';
+                }
+
+                if (axis === 'h') {
+                    direction = velocity.x > 0 ? 'l' : 'r';
+                } else {
+                    direction = velocity.y > 0 ? 't' : 'b';
+                }
+            }
+
+            star.z = STAR_MIN_SCALE + Math.random() * (1 - STAR_MIN_SCALE);
+
+            if (direction === 'z') {
+                star.z = 0.1;
+                star.x = Math.random() * width;
+                star.y = Math.random() * height;
+            } else if (direction === 'l') {
+                star.x = -OVERFLOW_THRESHOLD;
+                star.y = height * Math.random();
+            } else if (direction === 'r') {
+                star.x = width + OVERFLOW_THRESHOLD;
+                star.y = height * Math.random();
+            } else if (direction === 't') {
+                star.x = width * Math.random();
+                star.y = -OVERFLOW_THRESHOLD;
+            } else if (direction === 'b') {
+                star.x = width * Math.random();
+                star.y = height + OVERFLOW_THRESHOLD;
+            }
+
+        }
+
+        function resize() {
+
+            scale = window.devicePixelRatio || 1;
+
+            width = window.innerWidth * scale;
+            height = window.innerHeight * scale;
+
+            canvas.width = width;
+            canvas.height = height;
+
+            stars.forEach(placeStar);
+
+        }
+
+        function step() {
+
+            context.clearRect(0, 0, width, height);
+
+            update();
+            render();
+
+            requestAnimationFrame(step);
+
+        }
+
+        function update() {
+
+            velocity.tx *= 0.96;
+            velocity.ty *= 0.96;
+
+            velocity.x += (velocity.tx - velocity.x) * 0.8;
+            velocity.y += (velocity.ty - velocity.y) * 0.8;
+
+            stars.forEach((star) => {
+
+                star.x += velocity.x * star.z;
+                star.y += velocity.y * star.z;
+
+                star.x += (star.x - width / 2) * velocity.z * star.z;
+                star.y += (star.y - height / 2) * velocity.z * star.z;
+                star.z += velocity.z;
+
+                // recycle when out of bounds
+                if (star.x < -OVERFLOW_THRESHOLD || star.x > width + OVERFLOW_THRESHOLD || star.y < -OVERFLOW_THRESHOLD || star.y > height + OVERFLOW_THRESHOLD) {
+                    recycleStar(star);
+                }
+
+            });
+
+        }
+
+        function render() {
+
+            stars.forEach((star) => {
+
+                context.beginPath();
+                context.lineCap = 'round';
+                context.lineWidth = STAR_SIZE * star.z * scale;
+                context.globalAlpha = 0.5 + 0.5 * Math.random();
+                context.strokeStyle = STAR_COLOR;
+
+                context.beginPath();
+                context.moveTo(star.x, star.y);
+
+                var tailX = velocity.x * 2,
+                    tailY = velocity.y * 2;
+
+                // stroke() wont work on an invisible line
+                if (Math.abs(tailX) < 0.1) tailX = 0.5;
+                if (Math.abs(tailY) < 0.1) tailY = 0.5;
+
+                context.lineTo(star.x + tailX, star.y + tailY);
+
+                context.stroke();
+
+            });
+
+        }
+    </script>
+</body>
+
+</html>
